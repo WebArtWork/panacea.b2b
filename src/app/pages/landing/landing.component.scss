@@ -3,7 +3,7 @@
 .hero { position: relative; min-height: clamp(24rem, 42vw, 38rem); margin: 0 auto; overflow: hidden; }
 .landscape-break > img, .partner-section__photo img { object-fit: cover; }
 .hero__video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.hero__shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgb(8 31 23 / .68), rgb(8 31 23 / .2) 58%, transparent); }
+.hero__shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgb(8 31 23 / .68), rgb(8 31 23 / .32) 58%, rgb(8 31 23 / .18)); }
 .hero__content { position: relative; z-index: 1; display: flex; min-height: inherit; max-width: 1440px; flex-direction: column; align-items: center; justify-content: flex-end; margin: auto; padding: clamp(1.5rem, 4vw, 4.25rem); color: white; text-align: center; }
 .hero__content--enter { animation: hero-content-in .9s cubic-bezier(.22, 1, .36, 1) both; }
 .hero h1, h2, h3 { font-family: var(--ff-display); font-weight: 500; letter-spacing: -.06em; }
@@ -18,10 +18,10 @@
 .statement__droplets { display: block; width: clamp(10rem, 30vw, 16rem); height: auto; margin: 2.5rem auto -1.5rem; opacity: .8; }
 
 @media (min-width: 768px) {
-	.statement { max-width: 64rem; }
+	.statement { position: relative; max-width: 64rem; padding-bottom: clamp(3.5rem, 6vw, 5rem); }
 	.statement h2 { font-size: clamp(1.8rem, 3.6vw, 3.6rem); white-space: nowrap; }
 	.statement h2 .statement__break { display: none; }
-	.statement__droplets { width: clamp(14rem, 20vw, 22rem); margin: -2rem -3rem -1.5rem auto; }
+	.statement__droplets { position: absolute; right: -3rem; bottom: -100px; z-index: 1; width: clamp(14rem, 20vw, 22rem); margin: 0; pointer-events: none; }
 }
 .statement h2, .process-section h2, .partner-section h2, .quality-section h2 { font-size: clamp(3.3rem, 6.2vw, 6.2rem); line-height: .8; }
 .statement h2 { line-height: 1.05; }
@@ -77,10 +77,11 @@
 .ticker__track span::after { content: '•'; color: rgb(44 89 64 / 1); }
 .products__intro h3 { font-family: var(--ff-display); font-weight: 500; font-size: clamp(1.4rem, 3.4vw, 2.7rem); letter-spacing: -.03em; white-space: nowrap; }
 .products__intro p { margin-top: .8rem; color: #405a4e; font-size: .95rem; line-height: 1.8; }
-.quality-section { display: grid; max-width: 1440px; gap: 3rem; margin: 0 auto; padding: clamp(5rem, 9vw, 8rem) clamp(2rem, 8vw, 8rem); background: #eaf7f3; }
-.quality-section__column { display: flex; max-width: 25rem; flex-direction: column; align-self: end; gap: 1.5rem; }
-.quality-section__badges { display: grid; grid-template-columns: repeat(4, auto); gap: 1rem; justify-content: center; }
-.quality-section__badges img { width: 100%; max-width: 5.5rem; height: auto; }
+.quality-section { display: grid; max-width: 1440px; gap: 3rem; margin: 0 auto; padding: clamp(5rem, 9vw, 8rem) clamp(2rem, 8vw, 8rem); background: #eaf7f3; align-items: start; }
+.quality-section__intro { display: flex; flex-direction: column; gap: 2rem; }
+.quality-section__column { display: flex; max-width: 25rem; flex-direction: column; align-self: stretch; gap: 1.5rem; }
+.quality-section__badges { display: grid; grid-template-columns: repeat(4, auto); gap: 1rem; justify-content: center; margin-top: auto; }
+.quality-section__badges img { width: 100%; max-width: 6.6rem; height: auto; }
 .quality-section__lead p { margin-top: .9rem; color: #38594a; font-size: .9rem; line-height: 1.9; }
 .quality-section__lead p:first-child { margin-top: 0; }
 .quality-section__history p { margin-top: .8rem; max-width: 34rem; color: #38594a; font-size: .9rem; line-height: 1.9; }
@@ -143,7 +144,7 @@
 	.statement { padding-top: clamp(3.5rem, 7vw, 6rem); }
 	.statement__mark { width: clamp(4rem, 7vw, 6rem); }
 	.statement h2 { margin-bottom: 1rem; }
-	.statement__intro { font-size: 1.05rem; }
+	.statement__intro { max-width: 34rem; font-size: 1.05rem; }
 	.product-row__copy > p:not(.eyebrow) { font-size: 1.64rem; }
 	.product-variants strong { font-size: .68rem; }
 	.origin-section__content > p:not(.eyebrow) { font-size: 1rem; }
@@ -167,7 +168,6 @@
 	.product-row--reverse .product-row__copy { margin: 1.5rem -3rem 0 0; }
 	.quality-section { grid-template-columns: 1.1fr .9fr; }
 	.quality-section__column { gap: 3.5rem; }
-	.quality-section__history { grid-column: 1 / -1; }
 	.partner-section { grid-template-columns: 1fr 1fr; }
 	.partner-section__photo { min-height: 100%; }
 	.contact-section { grid-template-columns: .8fr 1.6fr; }

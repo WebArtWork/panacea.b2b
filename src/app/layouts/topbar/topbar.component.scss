@@ -6,7 +6,7 @@
 .topbar__contacts a { display: grid; width: 2.6rem; height: 2.6rem; place-items: center; border: 1px solid #163b2d; border-radius: 999px; transition: background .2s ease, color .2s ease; }
 .topbar__contacts a:hover { background: #163b2d; color: white; }
 .topbar__contacts .material-symbols-outlined { font-size: 1.3rem; }
-.topbar__contacts .icon-instagram { width: 1.3rem; height: 1.3rem; }
+.topbar__contacts .icon-instagram, .topbar__contacts .icon-facebook { width: 1.3rem; height: 1.3rem; }
 .topbar nav a, .mobile-menu a { font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; transition: color .2s ease; }
 .topbar nav a:hover, .mobile-menu a:hover { color: #8d4230; }
 .nav-cta { border-bottom: 1px solid currentColor; padding-bottom: .25rem; }
@@ -17,7 +17,7 @@
 .brand-mark { display: block; font-family: var(--ff-display); font-size: 1.35rem; font-weight: 700; letter-spacing: -.06em; }
 .brand-link { display: flex; align-items: center; gap: .5rem; }
 .brand-mark-icon { width: 2.8rem; height: auto; }
-.brand-wordmark { width: 144px; height: auto; }
+.brand-wordmark { width: 144px; aspect-ratio: 1683 / 255; background: #d6b36a; mask: url('/logo-panacea.svg') center / contain no-repeat; }
 .mobile-menu { display: grid; gap: 1.1rem; border-bottom: 1px solid #e8ebe8; padding: 1.5rem; background: white; color: #163b2d; }
 .certificates { position: fixed; z-index: 100; inset: 0; display: grid; width: 100vw; height: 100vh; place-items: center; background: rgb(8 31 23 / .82); padding: clamp(1rem, 5vw, 3rem); overflow-y: auto; }
 .certificates__panel { position: relative; width: 100%; max-width: 64rem; max-height: 90vh; overflow-y: auto; background: #fff; padding: clamp(1.5rem, 4vw, 2.5rem); }
@@ -27,4 +27,4 @@
 .certificates__grid figcaption { margin-top: .6rem; color: #163b2d; font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-align: center; text-transform: uppercase; }
 @media (min-width: 768px) { .certificates__grid { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 768px) { .topbar nav a { font-size: .78rem; } }
-@media (max-width: 767px) { .topbar { min-height: 3.5rem; gap: .5rem; padding: .35rem .75rem; } .topbar__right { gap: .4rem; } .topbar__contacts { gap: .35rem; } .topbar__contacts a { width: 1.8rem; height: 1.8rem; } .topbar__contacts .material-symbols-outlined { font-size: .92rem; } .topbar__contacts .icon-instagram { width: .92rem; height: .92rem; } .icon-button { display: grid; width: 2.75rem; height: 2.75rem; place-items: center; font-size: 1.75rem; line-height: 1; } .brand-mark-icon { width: 2.4rem; } .brand-wordmark { width: 108px; } }
+@media (max-width: 767px) { .topbar { min-height: 3.5rem; gap: .5rem; padding: .35rem .75rem; } .topbar__right { gap: .4rem; } .topbar__contacts { gap: .35rem; } .topbar__contacts a { width: 1.8rem; height: 1.8rem; } .topbar__contacts .material-symbols-outlined { font-size: .92rem; } .topbar__contacts .icon-instagram, .topbar__contacts .icon-facebook { width: .92rem; height: .92rem; } .icon-button { display: grid; width: 2.75rem; height: 2.75rem; place-items: center; font-size: 1.75rem; line-height: 1; } .brand-mark-icon { width: 2.4rem; } .brand-wordmark { width: 108px; } }

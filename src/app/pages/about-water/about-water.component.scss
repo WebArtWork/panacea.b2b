@@ -2,7 +2,18 @@
 .eyebrow { margin-bottom: .8rem; font-size: .52rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
 .about-section { padding-top: clamp(2rem, 4vw, 3rem); padding-bottom: clamp(2rem, 4vw, 3rem); }
 .about-section__media { min-height: 16rem; }
+.source-section { font-family: var(--ff-base); }
+.source-section h2, .source-section h3 { margin-top: .9rem; color: #163b2d; font-size: .9rem; font-weight: 700; line-height: 1.8; }
+.source-section__intro, .source-well, .source-section__conclusion { margin-top: 0; }
+.source-well__number { margin-top: 0 !important; color: #163b2d !important; font-weight: 700; }
+.source-section__closing { margin-top: .9rem !important; }
 
 @media (max-width: 767px) {
 	.eyebrow { margin-bottom: .55rem; font-size: .46rem; }
+}
+
+@media (min-width: 768px) {
+	.source-section h2, .source-section h3 { font-size: 1rem; }
+	.source-section { align-items: start; }
+	.source-section .about-section__media { position: sticky; top: 7rem; min-height: min(46rem, calc(100vh - 9rem)); }
 }

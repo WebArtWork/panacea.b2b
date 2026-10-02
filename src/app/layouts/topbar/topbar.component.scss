@@ -25,6 +25,9 @@
 .certificates__grid { display: grid; gap: 1.5rem; }
 .certificates__grid img { display: block; width: 100%; height: auto; border: 1px solid #e8ebe8; }
 .certificates__grid figcaption { margin-top: .6rem; color: #163b2d; font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-align: center; text-transform: uppercase; }
+.certificates__document { display: flex; flex-direction: column; align-items: center; }
+.certificates__download { display: inline-flex; margin-top: .75rem; border: 1px solid #163b2d; border-radius: 999px; padding: .55rem 1rem; color: #163b2d; font-size: .7rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; transition: background .2s ease, color .2s ease; }
+.certificates__download:hover { background: #163b2d; color: #fff; }
 @media (min-width: 768px) { .certificates__grid { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 768px) { .topbar nav a { font-size: .78rem; } }
 @media (max-width: 767px) { .topbar { min-height: 3.5rem; gap: .5rem; padding: .35rem .75rem; } .topbar__right { gap: .4rem; } .topbar__contacts { gap: .35rem; } .topbar__contacts a { width: 1.8rem; height: 1.8rem; } .topbar__contacts .material-symbols-outlined { font-size: .92rem; } .topbar__contacts .icon-instagram, .topbar__contacts .icon-facebook { width: .92rem; height: .92rem; } .icon-button { display: grid; width: 2.75rem; height: 2.75rem; place-items: center; font-size: 1.75rem; line-height: 1; } .brand-mark-icon { width: 2.4rem; } .brand-wordmark { width: 108px; } }

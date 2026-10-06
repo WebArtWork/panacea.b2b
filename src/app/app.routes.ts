@@ -35,6 +35,16 @@ export const routes: Routes = [
 			),
 	},
 	{
+		path: 'private-label',
+		data: {
+			meta: buildRouteMeta(companyProfile, '/private-label'),
+		},
+		loadComponent: () =>
+			import('./pages/private-label/private-label.component').then(
+				(m) => m.PrivateLabelComponent,
+			),
+	},
+	{
 		path: '**',
 		redirectTo: '',
 	},

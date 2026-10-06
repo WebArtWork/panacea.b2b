@@ -97,6 +97,10 @@
 .partner-section > .partner-section__copy > p:not(.eyebrow):first-of-type { margin-top: 1.5rem; }
 .partner-section .button { border-color: white; background: white; color: #163b2d; padding: .9rem 1.5rem; font-size: .65rem; }
 .partner-section .button:hover, .partner-section .button:focus-visible { background: #f5fbf8; border-color: white; color: #163b2d; letter-spacing: .1em; }
+.partner-section__actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.6rem; }
+.partner-section__actions .button { margin-top: 0; }
+.partner-section .button--outline { background: transparent; color: #fff; }
+.partner-section .button--outline:hover, .partner-section .button--outline:focus-visible { background: #fff; color: #163b2d; }
 .contact-section { display: grid; gap: 2.5rem; max-width: 1440px; margin: 0 auto; padding: clamp(3rem, 6vw, 5rem) clamp(2rem, 6vw, 6rem); scroll-margin-top: 5.25rem; background: #eaf7f3; }
 .contact-section__intro h2 { font-size: clamp(3rem, 5vw, 5.3rem); line-height: .8; }
 .contact-form { display: grid; gap: 1rem; }

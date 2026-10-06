@@ -2,7 +2,7 @@ import { DOCUMENT, NgOptimizedImage } from '@angular/common';
 import { afterNextRender, Component, inject, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { FormsModule, NgForm } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { ContactService } from '../../feature/contact/contact.service';
 
 interface ContactFormValue {
@@ -40,7 +40,7 @@ interface ProductSpecs {
 }
 
 @Component({
-	imports: [NgOptimizedImage, FormsModule],
+	imports: [NgOptimizedImage, FormsModule, RouterLink],
 	host: { '(document:keydown.escape)': 'closeProductPreview(); closeProductSpecs()' },
 	templateUrl: './landing.component.html',
 	styleUrl: './landing.component.scss',

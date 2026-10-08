@@ -48,7 +48,13 @@ interface ProductSpecs {
 export class LandingComponent {
 	readonly heroEntranceReady = signal(false);
 	readonly heroPosterSrc = signal('/interface/hero-video-poster.webp');
-	readonly contact: ContactFormValue = { name: '', phone: '', email: '', country: 'UA', message: '' };
+	readonly contact: ContactFormValue = {
+		name: '',
+		phone: '',
+		email: '',
+		country: 'UA',
+		message: '',
+	};
 	readonly contactSubmitStatus = signal<ContactSubmitStatus>('idle');
 	readonly activeProductPreview = signal<ProductPreview | null>(null);
 	readonly activeProductSpecs = signal<ProductSpecs | null>(null);
@@ -71,7 +77,7 @@ export class LandingComponent {
 			{ label: 'Mg²⁺', value: '10 – 80' },
 			{ label: 'Ca²⁺', value: '20 – 100' },
 			{ label: 'Cl⁻', value: '< 80' },
-			{ label: 'HCO₃⁻', value: '40 – 60' },
+			{ label: 'HCO₃⁻', value: '400 - 600' },
 			{ label: 'SO₄²⁻', value: '< 150' },
 			{ label: 'TOC', value: '5 – 20' },
 			{ label: 'H₂SiO₃', value: '15 – 25' },
@@ -95,7 +101,7 @@ export class LandingComponent {
 			{ label: 'Mg²⁺', value: '10 – 80' },
 			{ label: 'Ca²⁺', value: '20 – 100' },
 			{ label: 'Cl⁻', value: '< 80' },
-			{ label: 'HCO₃⁻', value: '40 – 60' },
+			{ label: 'HCO₃⁻', value: '400 - 600' },
 			{ label: 'SO₄²⁻', value: '< 150' },
 			{ label: 'TOC', value: '5 – 20' },
 			{ label: 'H₂SiO₃', value: '15 – 25' },
@@ -254,7 +260,9 @@ export class LandingComponent {
 			if (!fragment) return;
 			requestAnimationFrame(() => {
 				requestAnimationFrame(() => {
-					this.document.getElementById(fragment)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+					this.document
+						.getElementById(fragment)
+						?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 				});
 			});
 		});
@@ -297,12 +305,15 @@ export class LandingComponent {
 		// would otherwise leave this tracking a detached element forever
 		const update = () => {
 			const vh = window.innerHeight;
-			this.document.querySelectorAll<HTMLElement>('.product-row__image > img').forEach((img) => {
-				const rect = img.getBoundingClientRect();
-				const progress = (rect.top + rect.height / 2 - vh / 2) / vh;
-				const imageScale = getComputedStyle(img).getPropertyValue('--product-scale').trim() || '1';
-				img.style.transform = `translateY(${(progress * range).toFixed(1)}px) scale(${imageScale})`;
-			});
+			this.document
+				.querySelectorAll<HTMLElement>('.product-row__image > img')
+				.forEach((img) => {
+					const rect = img.getBoundingClientRect();
+					const progress = (rect.top + rect.height / 2 - vh / 2) / vh;
+					const imageScale =
+						getComputedStyle(img).getPropertyValue('--product-scale').trim() || '1';
+					img.style.transform = `translateY(${(progress * range).toFixed(1)}px) scale(${imageScale})`;
+				});
 			ticking = false;
 		};
 		const onScroll = () => {

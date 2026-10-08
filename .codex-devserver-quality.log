@@ -1,0 +1,101 @@
+
+> app@22.0.1 start
+> ng serve --host 127.0.0.1 --port 4200
+
+> Building...
+√ Building...
+Browser bundles     
+Initial chunk files  | Names                   |  Raw size
+chunk-ABEJLF7Q.js    | -                       |   1.27 MB | 
+chunk-ROX5BPEO.js    | -                       | 350.23 kB | 
+main.js              | main                    | 123.82 kB | 
+styles.css           | styles                  |  16.22 kB | 
+
+                     | Initial total           |   1.76 MB
+
+Lazy chunk files     | Names                   |  Raw size
+chunk-FWP2EI7V.js    | landing-component       | 339.00 kB | 
+chunk-7OJH2WIQ.js    | about-water-component   |  57.87 kB | 
+chunk-2A74UBPX.js    | about-company-component |  24.44 kB | 
+
+
+Server bundles      
+Initial chunk files  | Names                   |  Raw size
+server.mjs           | server                  |   2.04 MB | 
+chunk-IHLRHIWQ.mjs   | -                       |   1.23 MB | 
+main.server.mjs      | main.server             |   1.06 MB | 
+polyfills.server.mjs | polyfills.server        | 495.81 kB | 
+chunk-XBX5PEZU.mjs   | -                       | 351.95 kB | 
+chunk-2LWKHUQ2.mjs   | -                       |   3.33 kB | 
+chunk-K62KRLDZ.mjs   | -                       |   2.20 kB | 
+
+Lazy chunk files     | Names                   |  Raw size
+chunk-ZD7S637K.mjs   | landing-component       | 339.02 kB | 
+chunk-QGRYI7B4.mjs   | about-water-component   |  57.89 kB | 
+chunk-DQ2C7DI7.mjs   | xhr2                    |  40.13 kB | 
+chunk-C5KIGQWW.mjs   | xhr2                    |  40.04 kB | 
+chunk-DERUCMPX.mjs   | about-company-component |  24.46 kB | 
+
+Application bundle generation complete. [4.804 seconds] - 2026-10-02T11:38:32.764Z
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://127.0.0.1:4200/
+  ➜  press h + enter to show help
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names             |  Raw size
+main.js             | main              | 123.82 kB | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-F6Z3DZM2.js   | landing-component | 339.08 kB | 
+
+
+Server bundles     
+Initial chunk files | Names             |  Raw size
+main.server.mjs     | main.server       |   1.06 MB | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-IJR6AQKO.mjs  | landing-component | 339.10 kB | 
+
+Application bundle generation complete. [1.843 seconds] - 2026-10-02T11:48:57.611Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names                   |  Raw size
+chunk-ABEJLF7Q.js    | -                       |   1.27 MB | 
+chunk-ROX5BPEO.js    | -                       | 350.23 kB | 
+main.js              | main                    | 123.82 kB | 
+styles.css           | styles                  |  16.22 kB | 
+
+                     | Initial total           |   1.76 MB
+
+Lazy chunk files     | Names                   |  Raw size
+chunk-F6Z3DZM2.js    | landing-component       | 339.08 kB | 
+chunk-7OJH2WIQ.js    | about-water-component   |  57.87 kB | 
+chunk-2A74UBPX.js    | about-company-component |  24.44 kB | 
+
+
+Server bundles      
+Initial chunk files  | Names                   |  Raw size
+server.mjs           | server                  |   2.04 MB | 
+chunk-IHLRHIWQ.mjs   | -                       |   1.23 MB | 
+main.server.mjs      | main.server             |   1.06 MB | 
+polyfills.server.mjs | polyfills.server        | 495.81 kB | 
+chunk-XBX5PEZU.mjs   | -                       | 351.95 kB | 
+chunk-2LWKHUQ2.mjs   | -                       |   3.33 kB | 
+chunk-K62KRLDZ.mjs   | -                       |   2.20 kB | 
+
+Lazy chunk files     | Names                   |  Raw size
+chunk-IJR6AQKO.mjs   | landing-component       | 339.10 kB | 
+chunk-QGRYI7B4.mjs   | about-water-component   |  57.89 kB | 
+chunk-DQ2C7DI7.mjs   | xhr2                    |  40.13 kB | 
+chunk-C5KIGQWW.mjs   | xhr2                    |  40.04 kB | 
+chunk-DERUCMPX.mjs   | about-company-component |  24.46 kB | 
+
+Application bundle generation complete. [0.241 seconds] - 2026-10-02T11:49:12.953Z
+
+Page reload sent to client(s).

@@ -9,6 +9,7 @@
 npm-debug.log
 yarn-error.log
 pnpm-debug.log
+.codex-devserver*.log
 
 # IDEs and editors
 .idea/

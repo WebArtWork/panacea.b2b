@@ -1,173 +1,192 @@
 [
 	{
-		"id": 1,
+		"id": 1791529661872,
 		"platform": "market",
 		"type": "phone",
 		"name": "Замовлення та консультації",
 		"role": "Відділ продажів",
 		"value": "+38 097 711 10 77",
+		"header": true,
 		"order": 0
 	},
 	{
-		"id": 2,
+		"id": 1791529877368,
 		"platform": "market",
 		"type": "email",
 		"name": "Замовлення та консультації",
 		"role": "Відділ продажів",
 		"value": "zbruchanskidzherela@gmail.com",
+		"header": false,
 		"order": 1
 	},
 	{
-		"id": 3,
+		"id": 1791529892841,
 		"platform": "market",
 		"type": "phone",
 		"name": "Кокорін Антон Олексійович",
 		"role": "Комерційний директор",
 		"value": "+38 097 711 10 77",
+		"header": false,
 		"order": 2
 	},
 	{
-		"id": 4,
+		"id": 1791529921518,
 		"platform": "market",
 		"type": "phone",
 		"name": "Кокорін Антон Олексійович",
 		"role": "Комерційний директор",
 		"value": "+38 097 988 44 72",
+		"header": false,
 		"order": 3
 	},
 	{
-		"id": 5,
+		"id": 1791529951615,
 		"platform": "market",
 		"type": "email",
 		"name": "Кокорін Антон Олексійович",
 		"role": "Комерційний директор",
 		"value": "panacea.akokorin@gmail.com",
+		"header": false,
 		"order": 4
 	},
 	{
-		"id": 6,
+		"id": 1791529971224,
 		"platform": "market",
 		"type": "phone",
 		"name": "Гнатов Анатолій Іванович",
 		"role": "Директор виробництва",
 		"value": "+38 067 522 34 27",
+		"header": false,
 		"order": 5
 	},
 	{
-		"id": 7,
+		"id": 1791529994786,
 		"platform": "market",
 		"type": "address",
 		"name": "ТОВ «Збручанські джерела»",
 		"role": "Реквізити та адреса",
 		"value": "селище Сатанів, Хмельницька область, Україна",
+		"header": false,
 		"order": 6
 	},
 	{
-		"id": 8,
+		"id": 1791530014554,
 		"platform": "market",
 		"type": "instagram",
 		"name": "ТОВ «Збручанські джерела»",
 		"role": "Реквізити та адреса",
 		"value": "https://www.instagram.com/panacea_mineral_water",
+		"header": false,
 		"order": 7
 	},
 	{
-		"id": 9,
+		"id": 1791530043092,
 		"platform": "market",
 		"type": "facebook",
 		"name": "ТОВ «Збручанські джерела»",
 		"role": "Реквізити та адреса",
 		"value": "https://www.facebook.com/profile.php?id=61593882497188",
+		"header": false,
 		"order": 8
 	},
 	{
-		"id": 10,
+		"id": 1791530068144,
 		"platform": "b2b",
 		"type": "phone",
 		"name": "Відділ збуту",
 		"role": "",
 		"value": "+38 097 711 10 77",
+		"header": true,
 		"order": 9
 	},
 	{
-		"id": 11,
+		"id": 1791530127764,
 		"platform": "b2b",
 		"type": "email",
 		"name": "ТОВ «Збручанські джерела»",
 		"role": "",
 		"value": "zbruchanskidzherela@gmail.com",
+		"header": false,
 		"order": 10
 	},
 	{
-		"id": 12,
+		"id": 1791530150392,
 		"platform": "b2b",
 		"type": "website",
 		"name": "ТОВ «Збручанські джерела»",
 		"role": "",
 		"value": "https://zbruchanskidzherela.com.ua",
+		"header": false,
 		"order": 11
 	},
 	{
-		"id": 13,
+		"id": 1791530177060,
 		"platform": "b2b",
 		"type": "address",
 		"name": "ТОВ «Збручанські джерела»",
 		"role": "",
 		"value": "селище Сатанів, Хмельницька область, Україна",
+		"header": false,
 		"order": 12
 	},
 	{
-		"id": 14,
+		"id": 1791530217263,
 		"platform": "b2b",
 		"type": "phone",
 		"name": "Гнатів Анатолій Іванович",
 		"role": "Директор заводу мінеральних вод",
 		"value": "+38 067 522 34 27",
+		"header": false,
 		"order": 13
 	},
 	{
-		"id": 15,
+		"id": 1791530236737,
 		"platform": "b2b",
 		"type": "phone",
 		"name": "Кокорін Антон Олексійович",
 		"role": "Комерційний директор",
 		"value": "+38 097 711 10 77",
+		"header": false,
 		"order": 14
 	},
 	{
-		"id": 16,
+		"id": 1791530256636,
 		"platform": "b2b",
 		"type": "phone",
 		"name": "Кокорін Антон Олексійович",
 		"role": "Комерційний директор",
 		"value": "+38 097 988 44 72",
+		"header": false,
 		"order": 15
 	},
 	{
-		"id": 17,
+		"id": 1791530274160,
 		"platform": "b2b",
 		"type": "email",
 		"name": "Кокорін Антон Олексійович",
 		"role": "Комерційний директор",
 		"value": "panacea.akokorin@gmail.com",
+		"header": false,
 		"order": 16
 	},
 	{
-		"id": 18,
+		"id": 1791530287396,
 		"platform": "b2b",
 		"type": "instagram",
 		"name": "",
 		"role": "",
 		"value": "https://www.instagram.com/panacea_mineral_water",
+		"header": true,
 		"order": 17
 	},
 	{
-		"id": 19,
+		"id": 1791530294727,
 		"platform": "b2b",
 		"type": "facebook",
 		"name": "",
 		"role": "",
 		"value": "https://www.facebook.com/profile.php?id=61593882497188",
+		"header": true,
 		"order": 18
 	}
 ]

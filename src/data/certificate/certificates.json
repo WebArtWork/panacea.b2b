@@ -1,42 +1,52 @@
 [
 	{
-		"id": 1,
-		"title": "Сертифікат відповідності — вода «Збручанська»",
-		"description": "Мінеральна природна лікувально-столова сильногазована вода зі свердловини №1393-Д.",
+		"id": 1791529486460,
+		"title": "Сертифікат відповідності - вода «Збручанська»",
 		"meta": "TER.1.X.048-26 · чинний до 15.06.2028",
+		"description": "Мінеральна природна лікувально-столова сильногазована вода зі свердловини №1393-Д.",
+		"url": "https://cdn-it.webart.work/panacea/862104f9-6487-4d25-b482-da52737c547b/original.jpg",
+		"fileName": "cerf1.jpg",
 		"format": "JPG",
-		"url": "/docs/cerf1.jpg",
-		"fileName": "sertifikat-zbruchanska.jpg",
 		"order": 0
 	},
 	{
-		"id": 2,
-		"title": "Сертифікат відповідності — PANACEA Diamond",
-		"description": "Питна артезіанська оброблена вода: негазована, слабогазована та сильногазована.",
+		"id": 1791529529724,
+		"title": "Сертифікат відповідності - PANACEA Diamond",
 		"meta": "TER.1.X.072-26 · чинний до 20.07.2028",
+		"description": "Питна артезіанська оброблена вода: негазована, слабогазована та сильногазована.",
+		"url": "https://cdn-it.webart.work/panacea/2abb50dd-61a7-4dae-b07e-005bf5f322bd/original.jpg",
+		"fileName": "cerf2.jpg",
 		"format": "JPG",
-		"url": "/docs/cerf2.jpg",
-		"fileName": "sertifikat-panacea-diamond.jpg",
 		"order": 1
 	},
 	{
-		"id": 3,
+		"id": 1791529598670,
 		"title": "Медичний (бальнеологічний) висновок №492",
+		"meta": "29.09.2016",
 		"description": "Висновок Українського НДІ медичної реабілітації та курортології МОЗ України щодо води свердловини №1393-Д.",
-		"meta": "29.09.2016 · 2 сторінки",
+		"url": "https://cdn-it.webart.work/panacea/8b5d59eb-6c55-4cf2-b408-15a3c3de35be/original.pdf",
+		"fileName": "med_492_29_09_2016.pdf",
 		"format": "PDF",
-		"url": "/docs/med_492_29_09_2016.pdf",
-		"fileName": "medychnyi-vysnovok-492.pdf",
 		"order": 2
 	},
 	{
-		"id": 4,
+		"id": 1791529623325,
 		"title": "Специфікація готової продукції та вимоги до сировини",
-		"description": "Вимоги до джерела, технологічного процесу, складу, контролю якості, пакування та маркування продукції.",
 		"meta": "Технічна документація",
+		"description": "Вимоги до джерела, технологічного процесу, складу, контролю якості, пакування та маркування продукції.",
+		"url": "https://cdn-it.webart.work/panacea/29e0855f-4685-449f-ade0-2bbf67081df0/original.docx",
+		"fileName": "spec.docx",
 		"format": "DOCX",
-		"url": "/docs/spec.docx",
-		"fileName": "spetsyfikatsiia-produktsii.docx",
 		"order": 3
+	},
+	{
+		"id": 1791533569427,
+		"title": "asda",
+		"meta": "asd",
+		"description": "asd",
+		"url": "https://cdn-it.webart.work/panacea/01d1691d-3315-4440-8eaa-1753d20fd9fb/original.docx",
+		"fileName": "oferta.docx",
+		"format": "DOCX",
+		"order": 4
 	}
 ]

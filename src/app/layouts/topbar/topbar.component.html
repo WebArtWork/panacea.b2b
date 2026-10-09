@@ -61,25 +61,39 @@
 }
 
 @if (certificatesOpen()) {
-	<div class="certificates" role="dialog" aria-modal="true" aria-label="Сертифікати якості PANACEA" (click)="closeCertificates()">
+	<div class="certificates" role="dialog" aria-modal="true" aria-labelledby="certificates-title" (click)="closeCertificates()">
 		<div class="certificates__panel" (click)="$event.stopPropagation()">
 			<button class="certificates__close" type="button" (click)="closeCertificates()" aria-label="Закрити сертифікати">✕</button>
+			<header class="certificates__header">
+				<div>
+					<p class="certificates__eyebrow">Відкрита документація</p>
+					<h2 id="certificates-title">Документи</h2>
+				</div>
+				<p>Оригінали сертифікатів і матеріали, на підставі яких контролюється якість продукції.</p>
+			</header>
 			<div class="certificates__grid">
 				@for (document of documents; track document.url) {
-					<figure [class.certificates__document]="!isImage(document)">
-						@if (isImage(document)) {
-							<img [src]="document.url" [alt]="document.title" loading="lazy" />
-						} @else {
-							<strong class="certificates__type" aria-hidden="true">{{ document.format }}</strong>
-						}
-						<figcaption>{{ document.title }}</figcaption>
-						@if (!isImage(document)) {
-							@if (canPreview(document)) {
-								<a class="certificates__download" [href]="document.url" target="_blank" rel="noopener noreferrer">Переглянути</a>
+					<article class="certificates__card">
+						<a class="certificates__preview" [href]="document.url" target="_blank" rel="noopener noreferrer" [attr.aria-label]="'Переглянути ' + document.title">
+							<span class="certificates__badge">{{ document.format }}</span>
+							@if (isImage(document)) {
+								<img [src]="document.url" [alt]="document.title" loading="lazy" />
+							} @else {
+								<strong class="certificates__type" aria-hidden="true">{{ document.format }}</strong>
 							}
-							<a class="certificates__download" [href]="document.url" [attr.download]="document.fileName">Завантажити {{ document.format }}</a>
-						}
-					</figure>
+						</a>
+						<div class="certificates__content">
+							<p class="certificates__meta">{{ document.meta }}</p>
+							<h3>{{ document.title }}</h3>
+							<p class="certificates__description">{{ document.description }}</p>
+							<div class="certificates__actions">
+								@if (canPreview(document)) {
+									<a class="certificates__action certificates__action--secondary" [href]="document.url" target="_blank" rel="noopener noreferrer">Переглянути <span aria-hidden="true">↗</span></a>
+								}
+								<a class="certificates__action certificates__action--primary" [href]="document.url" [attr.download]="document.fileName">Завантажити <span aria-hidden="true">↓</span></a>
+							</div>
+						</div>
+					</article>
 				}
 			</div>
 		</div>

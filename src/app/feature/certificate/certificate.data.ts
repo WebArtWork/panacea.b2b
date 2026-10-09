@@ -7,6 +7,8 @@ import certificatesData from '../../../data/certificate/certificates.json';
 export interface Certificate {
 	id: number;
 	title: string;
+	description: string;
+	meta: string;
 	format: string;
 	/** Absolute for uploads; `/docs/...` for files shipped with the market site. */
 	url: string;

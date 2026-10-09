@@ -21,19 +21,30 @@
 			<a class="nav-cta" routerLink="/" fragment="contacts">Контакти</a>
 		</nav>
 		<div class="topbar__contacts" aria-label="Контакти PANACEA">
-			<a href="tel:+380977111077" aria-label="Зателефонувати у відділ збуту"><span class="material-symbols-outlined" aria-hidden="true">call</span></a>
-			<a href="https://www.instagram.com/panacea_mineral_water" target="_blank" rel="noopener noreferrer" aria-label="Instagram PANACEA">
-				<svg class="icon-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-					<rect x="3" y="3" width="18" height="18" rx="5" />
-					<circle cx="12" cy="12" r="4" />
-					<circle cx="17.5" cy="6.5" r=".9" fill="currentColor" stroke="none" />
-				</svg>
-			</a>
-			<a href="https://www.facebook.com/profile.php?id=61593882497188" target="_blank" rel="noopener noreferrer" aria-label="Facebook PANACEA">
-				<svg class="icon-facebook" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-					<path d="M13.7 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5H17V3.6c-.8-.1-1.7-.2-2.5-.2-2.5 0-4.2 1.5-4.2 4.3v2.2H7.5V13h2.8v8h3.4Z" />
-				</svg>
-			</a>
+			@if (phone) {
+				<a [href]="contactHref(phone)" aria-label="Зателефонувати у відділ збуту"><span class="material-symbols-outlined" aria-hidden="true">call</span></a>
+			}
+			@for (social of socials; track social.id) {
+				<a [href]="contactHref(social)" target="_blank" rel="noopener noreferrer" [attr.aria-label]="contactText(social) + ' PANACEA'">
+					@switch (social.type) {
+						@case ('instagram') {
+							<svg class="icon-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+								<rect x="3" y="3" width="18" height="18" rx="5" />
+								<circle cx="12" cy="12" r="4" />
+								<circle cx="17.5" cy="6.5" r=".9" fill="currentColor" stroke="none" />
+							</svg>
+						}
+						@case ('facebook') {
+							<svg class="icon-facebook" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+								<path d="M13.7 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5H17V3.6c-.8-.1-1.7-.2-2.5-.2-2.5 0-4.2 1.5-4.2 4.3v2.2H7.5V13h2.8v8h3.4Z" />
+							</svg>
+						}
+						@default {
+							<span class="material-symbols-outlined" aria-hidden="true">link</span>
+						}
+					}
+				</a>
+			}
 		</div>
 	</div>
 </header>
@@ -54,7 +65,7 @@
 		<div class="certificates__panel" (click)="$event.stopPropagation()">
 			<button class="certificates__close" type="button" (click)="closeCertificates()" aria-label="Закрити сертифікати">✕</button>
 			<div class="certificates__grid">
-				@for (document of documents(); track document.url) {
+				@for (document of documents; track document.url) {
 					<figure [class.certificates__document]="!isImage(document)">
 						@if (isImage(document)) {
 							<img [src]="document.url" [alt]="document.title" loading="lazy" />

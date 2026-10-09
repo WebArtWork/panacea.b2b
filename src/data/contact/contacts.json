@@ -1,0 +1,173 @@
+[
+	{
+		"id": 1,
+		"platform": "market",
+		"type": "phone",
+		"name": "Замовлення та консультації",
+		"role": "Відділ продажів",
+		"value": "+38 097 711 10 77",
+		"order": 0
+	},
+	{
+		"id": 2,
+		"platform": "market",
+		"type": "email",
+		"name": "Замовлення та консультації",
+		"role": "Відділ продажів",
+		"value": "zbruchanskidzherela@gmail.com",
+		"order": 1
+	},
+	{
+		"id": 3,
+		"platform": "market",
+		"type": "phone",
+		"name": "Кокорін Антон Олексійович",
+		"role": "Комерційний директор",
+		"value": "+38 097 711 10 77",
+		"order": 2
+	},
+	{
+		"id": 4,
+		"platform": "market",
+		"type": "phone",
+		"name": "Кокорін Антон Олексійович",
+		"role": "Комерційний директор",
+		"value": "+38 097 988 44 72",
+		"order": 3
+	},
+	{
+		"id": 5,
+		"platform": "market",
+		"type": "email",
+		"name": "Кокорін Антон Олексійович",
+		"role": "Комерційний директор",
+		"value": "panacea.akokorin@gmail.com",
+		"order": 4
+	},
+	{
+		"id": 6,
+		"platform": "market",
+		"type": "phone",
+		"name": "Гнатов Анатолій Іванович",
+		"role": "Директор виробництва",
+		"value": "+38 067 522 34 27",
+		"order": 5
+	},
+	{
+		"id": 7,
+		"platform": "market",
+		"type": "address",
+		"name": "ТОВ «Збручанські джерела»",
+		"role": "Реквізити та адреса",
+		"value": "селище Сатанів, Хмельницька область, Україна",
+		"order": 6
+	},
+	{
+		"id": 8,
+		"platform": "market",
+		"type": "instagram",
+		"name": "ТОВ «Збручанські джерела»",
+		"role": "Реквізити та адреса",
+		"value": "https://www.instagram.com/panacea_mineral_water",
+		"order": 7
+	},
+	{
+		"id": 9,
+		"platform": "market",
+		"type": "facebook",
+		"name": "ТОВ «Збручанські джерела»",
+		"role": "Реквізити та адреса",
+		"value": "https://www.facebook.com/profile.php?id=61593882497188",
+		"order": 8
+	},
+	{
+		"id": 10,
+		"platform": "b2b",
+		"type": "phone",
+		"name": "Відділ збуту",
+		"role": "",
+		"value": "+38 097 711 10 77",
+		"order": 9
+	},
+	{
+		"id": 11,
+		"platform": "b2b",
+		"type": "email",
+		"name": "ТОВ «Збручанські джерела»",
+		"role": "",
+		"value": "zbruchanskidzherela@gmail.com",
+		"order": 10
+	},
+	{
+		"id": 12,
+		"platform": "b2b",
+		"type": "website",
+		"name": "ТОВ «Збручанські джерела»",
+		"role": "",
+		"value": "https://zbruchanskidzherela.com.ua",
+		"order": 11
+	},
+	{
+		"id": 13,
+		"platform": "b2b",
+		"type": "address",
+		"name": "ТОВ «Збручанські джерела»",
+		"role": "",
+		"value": "селище Сатанів, Хмельницька область, Україна",
+		"order": 12
+	},
+	{
+		"id": 14,
+		"platform": "b2b",
+		"type": "phone",
+		"name": "Гнатів Анатолій Іванович",
+		"role": "Директор заводу мінеральних вод",
+		"value": "+38 067 522 34 27",
+		"order": 13
+	},
+	{
+		"id": 15,
+		"platform": "b2b",
+		"type": "phone",
+		"name": "Кокорін Антон Олексійович",
+		"role": "Комерційний директор",
+		"value": "+38 097 711 10 77",
+		"order": 14
+	},
+	{
+		"id": 16,
+		"platform": "b2b",
+		"type": "phone",
+		"name": "Кокорін Антон Олексійович",
+		"role": "Комерційний директор",
+		"value": "+38 097 988 44 72",
+		"order": 15
+	},
+	{
+		"id": 17,
+		"platform": "b2b",
+		"type": "email",
+		"name": "Кокорін Антон Олексійович",
+		"role": "Комерційний директор",
+		"value": "panacea.akokorin@gmail.com",
+		"order": 16
+	},
+	{
+		"id": 18,
+		"platform": "b2b",
+		"type": "instagram",
+		"name": "",
+		"role": "",
+		"value": "https://www.instagram.com/panacea_mineral_water",
+		"order": 17
+	},
+	{
+		"id": 19,
+		"platform": "b2b",
+		"type": "facebook",
+		"name": "",
+		"role": "",
+		"value": "https://www.facebook.com/profile.php?id=61593882497188",
+		"order": 18
+	}
+]

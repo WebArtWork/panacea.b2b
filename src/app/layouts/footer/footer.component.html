@@ -24,35 +24,28 @@
 		<div>
 			<p class="footer-title">Контакти</p>
 			<div class="mt-6 grid gap-6 text-sm leading-relaxed text-white/75">
-				<div>
-					<p class="font-semibold text-white">Відділ збуту</p>
-					<a href="tel:+380977111077">+38 097 711 10 77</a>
-				</div>
-				<div>
-					<p class="font-semibold text-white">ТОВ «Збручанські джерела»</p>
-					<a href="mailto:zbruchanskidzherela@gmail.com">zbruchanskidzherela@gmail.com</a>
-					<a class="mt-1 block" href="https://zbruchanskidzherela.com.ua" target="_blank" rel="noopener noreferrer">zbruchanskidzherela.com.ua</a>
-					<p class="mt-1">селище Сатанів,<br />Хмельницька область, Україна</p>
-				</div>
-				<div>
-					<p class="font-semibold text-white">Гнатів Анатолій Іванович</p>
-					<p>Директор заводу мінеральних вод</p>
-					<a href="tel:+380675223427">+38 067 522 34 27</a>
-				</div>
-				<div>
-					<p class="font-semibold text-white">Кокорін Антон Олексійович</p>
-					<p>Комерційний директор</p>
-					<a href="tel:+380977111077">+38 097 711 10 77</a><br /><a href="tel:+380979884472">+38 097 988 44 72</a><br />
-					<a href="mailto:panacea.akokorin@gmail.com">panacea.akokorin@gmail.com</a>
-				</div>
-				<a class="inline-flex items-center gap-2" href="https://www.instagram.com/panacea_mineral_water" target="_blank" rel="noopener noreferrer">
-					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-						<rect x="3" y="3" width="18" height="18" rx="5" />
-						<circle cx="12" cy="12" r="4" />
-						<circle cx="17.5" cy="6.5" r=".9" fill="currentColor" stroke="none" />
-					</svg>
-					<span>@panacea_mineral_water</span>
-				</a>
+				@for (group of groups; track $index) {
+					<div>
+						@if (group.name) {
+							<p class="font-semibold text-white">{{ group.name }}</p>
+						}
+						@if (group.role) {
+							<p>{{ group.role }}</p>
+						}
+						@for (contact of group.contacts; track contact.id) {
+							@if (href(contact)) {
+								<a
+									class="block"
+									[href]="href(contact)"
+									[attr.target]="external(contact) ? '_blank' : null"
+									[attr.rel]="external(contact) ? 'noopener noreferrer' : null"
+								>{{ text(contact) }}</a>
+							} @else {
+								<p>{{ text(contact) }}</p>
+							}
+						}
+					</div>
+				}
 			</div>
 		</div>
 	</div>

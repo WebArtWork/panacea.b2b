@@ -54,21 +54,22 @@
 		<div class="certificates__panel" (click)="$event.stopPropagation()">
 			<button class="certificates__close" type="button" (click)="closeCertificates()" aria-label="Закрити сертифікати">✕</button>
 			<div class="certificates__grid">
-				<figure>
-					<img ngSrc="certificates/certificate-arden.jpg" width="2480" height="3508" alt="Сертифікат відповідності PANACEA Arden" />
-					<figcaption>PANACEA Arden</figcaption>
-				</figure>
-				<figure>
-					<img ngSrc="certificates/certificate-diamond.jpg" width="2480" height="3508" alt="Сертифікат відповідності PANACEA Diamond" />
-					<figcaption>PANACEA Diamond</figcaption>
-				</figure>
-				<figure class="certificates__document">
-					<a href="/certificates/medical-balneological-conclusion-492-2016.pdf" target="_blank" rel="noopener noreferrer" aria-label="Відкрити медичний бальнеологічний висновок №492">
-						<img ngSrc="certificates/medical-conclusion-492-preview.png" width="992" height="1404" alt="Перша сторінка медичного бальнеологічного висновку №492 від 29 вересня 2016 року" />
-					</a>
-					<figcaption>Медичний бальнеологічний висновок №492</figcaption>
-					<a class="certificates__download" href="/certificates/medical-balneological-conclusion-492-2016.pdf" download>Завантажити PDF</a>
-				</figure>
+				@for (document of documents(); track document.url) {
+					<figure [class.certificates__document]="!isImage(document)">
+						@if (isImage(document)) {
+							<img [src]="document.url" [alt]="document.title" loading="lazy" />
+						} @else {
+							<strong class="certificates__type" aria-hidden="true">{{ document.format }}</strong>
+						}
+						<figcaption>{{ document.title }}</figcaption>
+						@if (!isImage(document)) {
+							@if (canPreview(document)) {
+								<a class="certificates__download" [href]="document.url" target="_blank" rel="noopener noreferrer">Переглянути</a>
+							}
+							<a class="certificates__download" [href]="document.url" [attr.download]="document.fileName">Завантажити {{ document.format }}</a>
+						}
+					</figure>
+				}
 			</div>
 		</div>
 	</div>

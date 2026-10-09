@@ -26,6 +26,7 @@
 .certificates__grid img { display: block; width: 100%; height: auto; border: 1px solid #e8ebe8; }
 .certificates__grid figcaption { margin-top: .6rem; color: #163b2d; font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-align: center; text-transform: uppercase; }
 .certificates__document { display: flex; flex-direction: column; align-items: center; }
+.certificates__type { display: grid; width: 100%; aspect-ratio: 5 / 7; place-items: center; border: 1px solid #e8ebe8; background: #f2f5f2; color: #163b2d; font-size: 1.6rem; }
 .certificates__download { display: inline-flex; margin-top: .75rem; border: 1px solid #163b2d; border-radius: 999px; padding: .55rem 1rem; color: #163b2d; font-size: .7rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; transition: background .2s ease, color .2s ease; }
 .certificates__download:hover { background: #163b2d; color: #fff; }
 @media (min-width: 768px) { .certificates__grid { grid-template-columns: 1fr 1fr; } }
